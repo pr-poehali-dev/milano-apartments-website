@@ -113,12 +113,14 @@ const REVIEWS = [
 ];
 
 const LANDMARKS = [
-  { name: "Дуомо ди Милано", dist: "12 мин", emoji: "⛪" },
-  { name: "Галерея Витторио Эмануэле", dist: "14 мин", emoji: "🏛️" },
-  { name: "Ла Скала", dist: "15 мин", emoji: "🎭" },
-  { name: "Брера", dist: "8 мин", emoji: "🎨" },
-  { name: "Castello Sforzesco", dist: "18 мин", emoji: "🏰" },
-  { name: "Metro M2 Loreto", dist: "3 мин", emoji: "🚇" },
+  { name: "Ж/д станция Sesto FS", dist: "5 мин пешком", emoji: "🚉" },
+  { name: "Озеро Комо (поезд)", dist: "~50 мин", emoji: "🏔️" },
+  { name: "Озеро Маджоре (поезд)", dist: "~1 ч", emoji: "🌊" },
+  { name: "Лугано, Швейцария (поезд)", dist: "~1.5 ч", emoji: "🇨🇭" },
+  { name: "Аэропорт Бергамо (автобус Z301)", dist: "прямой рейс", emoji: "✈️" },
+  { name: "Дуомо ди Милано (метро)", dist: "20 мин", emoji: "⛪" },
+  { name: "Галерея Витторио Эмануэле", dist: "22 мин", emoji: "🏛️" },
+  { name: "Ла Скала", dist: "22 мин", emoji: "🎭" },
 ];
 
 // ─── COMPONENTS ─────────────────────────────────────────────────────────────
@@ -318,7 +320,7 @@ export default function Index() {
                   <p className="text-[#c9913a] text-xs font-semibold tracking-widest uppercase mb-1">Апартаменты №1</p>
                   <p className="text-[#8a7060] text-sm flex items-center gap-1">
                     <Icon name="MapPin" size={13} />
-                    Via Padova, Loreto · Milano
+                    Via Fratelli Picardi 175, Sesto San Giovanni
                   </p>
                 </div>
                 <div className="text-right">
@@ -367,7 +369,7 @@ export default function Index() {
                   <p className="text-[#c9913a] text-xs font-semibold tracking-widest uppercase mb-1">Апартаменты №2</p>
                   <p className="text-[#8a7060] text-sm flex items-center gap-1">
                     <Icon name="MapPin" size={13} />
-                    Via Padova, Loreto · Milano
+                    Via Monte Grappa 193, Sesto San Giovanni
                   </p>
                 </div>
                 <div className="text-right">
@@ -518,14 +520,18 @@ export default function Index() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <p className="text-[#c9913a] font-display tracking-widest uppercase text-sm mb-3">Расположение</p>
-            <h2 className="font-display text-4xl md:text-5xl font-bold text-[#2a1f1a]">В сердце Милана</h2>
-            <p className="text-[#8a7060] mt-3">Loreto, Via Padova · рядом с метро M1 и M2</p>
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-[#2a1f1a]">Sesto San Giovanni, Milano</h2>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-3 text-sm text-[#8a7060]">
+              <span>🏠 <strong className="text-[#2a1f1a]">Fortuna:</strong> Via Fratelli Picardi 175</span>
+              <span className="hidden sm:block">·</span>
+              <span>🏠 <strong className="text-[#2a1f1a]">Crystal:</strong> Via Monte Grappa 193</span>
+            </div>
           </div>
           <div className="grid md:grid-cols-2 gap-8 items-start">
             <div className="rounded-2xl overflow-hidden shadow-lg" style={{ height: 420 }}>
               <iframe
                 title="Milano Casa Map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.5!2d9.2221!3d45.4816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c6b6f0d6e0b7%3A0x0!2sVia%20Padova%2C%20Milano%2C%20Italy!5e0!3m2!1sru!2sit!4v1700000000000!5m2!1sru!2sit"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.5!2d9.2333!3d45.5344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c7e0b0e0b0b7%3A0x0!2sSesto%20San%20Giovanni%2C%20Milan%2C%20Italy!5e0!3m2!1sru!2sit!4v1700000000000!5m2!1sru!2sit"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -611,7 +617,7 @@ export default function Index() {
                     { icon: "MessageCircle", label: "WhatsApp", value: "+39 351 711 0016", href: "https://wa.me/393517110016" },
                     { icon: "Mail", label: "Email", value: "info@milanocasa.it", href: "mailto:info@milanocasa.it" },
                     { icon: "Instagram", label: "Instagram", value: "@milanocasa", href: "https://instagram.com/milanocasa" },
-                    { icon: "MapPin", label: "Адрес", value: "Via Padova, Milano, Italy", href: "https://maps.google.com/?q=Via+Padova+Milano" },
+                    { icon: "MapPin", label: "Адрес", value: "Sesto San Giovanni, Milano", href: "https://maps.google.com/?q=Sesto+San+Giovanni+Milano" },
                   ].map(({ icon, label, value, href }) => (
                     <a key={label} href={href} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 group">
                       <div className="w-9 h-9 bg-amber-50 group-hover:bg-amber-100 rounded-xl flex items-center justify-center flex-shrink-0 transition-colors">
