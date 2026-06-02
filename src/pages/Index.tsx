@@ -62,31 +62,31 @@ const AMENITIES = [
 
 const REVIEWS = [
   {
-    name: "Elena K.",
-    flag: "🇩🇪",
+    name: "Olga Barlet",
+    flag: "🇷🇺",
     rating: 5,
-    text: "Невероятная квартира! Интерьер как в журнале — синий бархат, картины, хрустальная люстра. Чувствуешь себя как в бутик-отеле.",
-    apt: "Апартаменты №2",
-  },
-  {
-    name: "Marco B.",
-    flag: "🇮🇹",
-    rating: 5,
-    text: "Perfetto! Чистота, уют, всё продумано до мелочей. Балкон с цветами — отдельное удовольствие. Вернёмся обязательно.",
+    text: "Неделя пролетела незаметно — настолько было комфортно и уютно. Очень чисто, спокойно и по-домашнему тепло. Видно, что хозяева относятся к своему делу с душой. С радостью остановимся снова!",
     apt: "Апартаменты №1",
   },
   {
-    name: "Sophie M.",
-    flag: "🇫🇷",
+    name: "Tasty Tour",
+    flag: "🇬🇪",
     rating: 5,
-    text: "Magnifique! Бордовая комната с тропическим панно — это просто шедевр. Расположение отличное, до Дуомо 15 минут.",
-    apt: "Апартаменты №2",
+    text: "Нас было четверо: 2 взрослых и 2 ребёнка — квартира стала идеальным домом. Изолированные спальни, идеальный ремонт, чистота. Лидия всё придумала до мелочей. До Дуомо всего 20 минут. Будем возвращаться ❤️",
+    apt: "Апартаменты №1",
   },
   {
-    name: "Иван П.",
+    name: "Светлана Лисова",
     flag: "🇷🇺",
     rating: 5,
-    text: "Всё как на фото и даже лучше. Хозяева очень отзывчивые, встретили с теплом. Отдельная благодарность за кофемашину!",
+    text: "Очень классная квартира во всех отношениях! Шикарные кровати, большая ванная, полностью обустроенная кухня. Лидия очень приветливая и рассказала о жизни в Милане во всех подробностях. Искренне рекомендую!",
+    apt: "Апартаменты №1",
+  },
+  {
+    name: "Vadim Yankovyi",
+    flag: "🇺🇦",
+    rating: 5,
+    text: "Супер квартира! Просторная, безупречно чистая, 2 балкона. Лидия — потрясающая хозяйка, помогла спланировать экскурсии на неделю. До метро 5 минут, уезжали на озеро Комо. Уверенно рекомендую!",
     apt: "Апартаменты №1",
   },
 ];
@@ -467,6 +467,26 @@ export default function Index() {
               <p className="text-[#5a4a40] text-sm leading-relaxed italic">"{r.text}"</p>
             </div>
           ))}
+        </div>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
+          <a
+            href="https://maps.app.goo.gl/LFhDGeCby1iDi5Vs8"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-2 border-2 border-stone-200 hover:border-[#c9913a] text-[#5a4a40] hover:text-[#8B1a1a] font-semibold px-6 py-3 rounded-full transition-all text-sm"
+          >
+            <Icon name="Star" size={16} className="text-[#c9913a]" />
+            Все отзывы — Апартаменты №1
+          </a>
+          <a
+            href="https://maps.app.goo.gl/pvbhxaqgABALCSRF7"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-2 border-2 border-stone-200 hover:border-[#c9913a] text-[#5a4a40] hover:text-[#8B1a1a] font-semibold px-6 py-3 rounded-full transition-all text-sm"
+          >
+            <Icon name="Star" size={16} className="text-[#c9913a]" />
+            Все отзывы — Апартаменты №2
+          </a>
         </div>
       </section>
 
