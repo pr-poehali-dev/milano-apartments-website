@@ -62,6 +62,27 @@ const AMENITIES = [
 
 const REVIEWS = [
   {
+    name: "Emilija Gaidukevic",
+    flag: "🇱🇹",
+    rating: 5,
+    text: "Апартаменты превзошли все ожидания! Уютно, удобно и приятно находиться. Хозяйка невероятно классная, делится множеством ценных советов. Расположение идеальное: легко добраться до центра. С удовольствием вернулись бы снова!",
+    apt: "Апартаменты №1",
+  },
+  {
+    name: "Tini Mini",
+    flag: "🌍",
+    rating: 5,
+    text: "We stayed in this beautiful apartment and enjoyed so much. Super clean and fully furnished. Lidia is the most amazing host I had from all my travels — knowledgeable, kind and informative. We will definitely go back! 🫶",
+    apt: "Апартаменты №1",
+  },
+  {
+    name: "Katerina Chumak",
+    flag: "🇺🇦",
+    rating: 5,
+    text: "Очень рекомендую! Светлые и очень чистые апартаменты, прямая линия метро до Дуомо. Хозяйка прекрасно подготовилась к приезду, показала квартиру и дала рекомендации по Милану. Обязательно вернусь!",
+    apt: "Апартаменты №1",
+  },
+  {
     name: "Olga Barlet",
     flag: "🇷🇺",
     rating: 5,
