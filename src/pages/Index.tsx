@@ -315,12 +315,23 @@ export default function Index() {
                   </span>
                 ))}
               </div>
-              <button
-                onClick={() => scrollTo("contacts")}
-                className="w-full bg-[#8B1a1a] hover:bg-[#6d1414] text-white font-semibold py-3 rounded-xl transition-all hover:shadow-lg"
-              >
-                Забронировать
-              </button>
+              <div className="flex gap-3">
+                <button
+                  onClick={() => scrollTo("contacts")}
+                  className="flex-1 bg-[#8B1a1a] hover:bg-[#6d1414] text-white font-semibold py-3 rounded-xl transition-all hover:shadow-lg"
+                >
+                  Забронировать
+                </button>
+                <a
+                  href="https://airbnb.com/h/fortunamilan"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1.5 px-4 py-3 rounded-xl border-2 border-[#FF5A5F] text-[#FF5A5F] hover:bg-[#FF5A5F] hover:text-white font-semibold text-sm transition-all"
+                >
+                  <Icon name="ExternalLink" size={15} />
+                  Airbnb
+                </a>
+              </div>
             </div>
           </div>
 
@@ -563,9 +574,20 @@ export default function Index() {
               <div className="bg-gradient-to-br from-[#8B1a1a] to-[#6d1414] rounded-2xl p-6 text-white">
                 <p className="font-display text-xl font-bold mb-2">Также на платформах</p>
                 <p className="text-white/70 text-sm mb-4">Бронируйте напрямую или через</p>
-                <div className="flex gap-3">
-                  <span className="bg-white/15 px-4 py-2 rounded-xl text-sm font-medium">Airbnb</span>
-                  <span className="bg-white/15 px-4 py-2 rounded-xl text-sm font-medium">Booking</span>
+                <div className="flex flex-col gap-2">
+                  <a
+                    href="https://airbnb.com/h/fortunamilan"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-between bg-white/15 hover:bg-white/25 px-4 py-2.5 rounded-xl text-sm font-medium transition-colors"
+                  >
+                    <span>🏠 Airbnb — Апартаменты №1</span>
+                    <Icon name="ExternalLink" size={14} className="opacity-70" />
+                  </a>
+                  <span className="flex items-center justify-between bg-white/10 px-4 py-2.5 rounded-xl text-sm font-medium text-white/50 cursor-default">
+                    <span>🏠 Airbnb — Апартаменты №2</span>
+                    <span className="text-xs opacity-50">скоро</span>
+                  </span>
                 </div>
               </div>
             </div>
