@@ -66,49 +66,49 @@ const REVIEWS = [
     flag: "🇱🇹",
     rating: 5,
     text: "Апартаменты превзошли все ожидания! Уютно, удобно и приятно находиться. Хозяйка невероятно классная, делится множеством ценных советов. Расположение идеальное: легко добраться до центра. С удовольствием вернулись бы снова!",
-    apt: "Апартаменты №1",
+    apt: "Fortuna Milan",
   },
   {
     name: "Tini Mini",
     flag: "🌍",
     rating: 5,
     text: "We stayed in this beautiful apartment and enjoyed so much. Super clean and fully furnished. Lidia is the most amazing host I had from all my travels — knowledgeable, kind and informative. We will definitely go back! 🫶",
-    apt: "Апартаменты №1",
+    apt: "Fortuna Milan",
   },
   {
     name: "Katerina Chumak",
     flag: "🇺🇦",
     rating: 5,
     text: "Очень рекомендую! Светлые и очень чистые апартаменты, прямая линия метро до Дуомо. Хозяйка прекрасно подготовилась к приезду, показала квартиру и дала рекомендации по Милану. Обязательно вернусь!",
-    apt: "Апартаменты №1",
+    apt: "Fortuna Milan",
   },
   {
     name: "Olga Barlet",
     flag: "🇷🇺",
     rating: 5,
     text: "Неделя пролетела незаметно — настолько было комфортно и уютно. Очень чисто, спокойно и по-домашнему тепло. Видно, что хозяева относятся к своему делу с душой. С радостью остановимся снова!",
-    apt: "Апартаменты №2",
+    apt: "Crystal Milan",
   },
   {
     name: "Tasty Tour",
     flag: "🇬🇪",
     rating: 5,
     text: "Нас было четверо: 2 взрослых и 2 ребёнка — квартира стала идеальным домом. Изолированные спальни, идеальный ремонт, чистота. Лидия всё придумала до мелочей. До Дуомо всего 20 минут. Будем возвращаться ❤️",
-    apt: "Апартаменты №2",
+    apt: "Crystal Milan",
   },
   {
     name: "Светлана Лисова",
     flag: "🇷🇺",
     rating: 5,
     text: "Очень классная квартира во всех отношениях! Шикарные кровати, большая ванная, полностью обустроенная кухня. Лидия очень приветливая и рассказала о жизни в Милане во всех подробностях. Искренне рекомендую!",
-    apt: "Апартаменты №2",
+    apt: "Crystal Milan",
   },
   {
     name: "Vadim Yankovyi",
     flag: "🇺🇦",
     rating: 5,
     text: "Супер квартира! Просторная, безупречно чистая, 2 балкона. Лидия — потрясающая хозяйка, помогла спланировать экскурсии на неделю. До метро 5 минут, уезжали на озеро Комо. Уверенно рекомендую!",
-    apt: "Апартаменты №2",
+    apt: "Crystal Milan",
   },
 ];
 
@@ -314,8 +314,9 @@ export default function Index() {
             <div className="mt-6">
               <div className="flex items-start justify-between mb-3">
                 <div>
-                  <h3 className="font-display text-2xl font-bold text-[#2a1f1a]">Апартаменты №1</h3>
-                  <p className="text-[#8a7060] text-sm mt-1 flex items-center gap-1">
+                  <h3 className="font-display text-2xl font-bold text-[#2a1f1a]">Fortuna Milan</h3>
+                  <p className="text-[#c9913a] text-xs font-semibold tracking-widest uppercase mb-1">Апартаменты №1</p>
+                  <p className="text-[#8a7060] text-sm flex items-center gap-1">
                     <Icon name="MapPin" size={13} />
                     Via Padova, Loreto · Milano
                   </p>
@@ -362,8 +363,9 @@ export default function Index() {
             <div className="mt-6">
               <div className="flex items-start justify-between mb-3">
                 <div>
-                  <h3 className="font-display text-2xl font-bold text-[#2a1f1a]">Апартаменты №2</h3>
-                  <p className="text-[#8a7060] text-sm mt-1 flex items-center gap-1">
+                  <h3 className="font-display text-2xl font-bold text-[#2a1f1a]">Crystal Milan</h3>
+                  <p className="text-[#c9913a] text-xs font-semibold tracking-widest uppercase mb-1">Апартаменты №2</p>
+                  <p className="text-[#8a7060] text-sm flex items-center gap-1">
                     <Icon name="MapPin" size={13} />
                     Via Padova, Loreto · Milano
                   </p>
@@ -633,7 +635,7 @@ export default function Index() {
                     rel="noopener noreferrer"
                     className="flex items-center justify-between bg-white/15 hover:bg-white/25 px-4 py-2.5 rounded-xl text-sm font-medium transition-colors"
                   >
-                    <span>🏠 Airbnb — Апартаменты №1</span>
+                    <span>🏠 Fortuna Milan — Апартаменты №1</span>
                     <Icon name="ExternalLink" size={14} className="opacity-70" />
                   </a>
                   <a
@@ -642,7 +644,7 @@ export default function Index() {
                     rel="noopener noreferrer"
                     className="flex items-center justify-between bg-white/15 hover:bg-white/25 px-4 py-2.5 rounded-xl text-sm font-medium transition-colors"
                   >
-                    <span>🏠 Airbnb — Апартаменты №2</span>
+                    <span>🏠 Crystal Milan — Апартаменты №2</span>
                     <Icon name="ExternalLink" size={14} className="opacity-70" />
                   </a>
                 </div>
