@@ -363,12 +363,23 @@ export default function Index() {
                   </span>
                 ))}
               </div>
-              <button
-                onClick={() => scrollTo("contacts")}
-                className="w-full bg-[#8B1a1a] hover:bg-[#6d1414] text-white font-semibold py-3 rounded-xl transition-all hover:shadow-lg"
-              >
-                Забронировать
-              </button>
+              <div className="flex gap-3">
+                <button
+                  onClick={() => scrollTo("contacts")}
+                  className="flex-1 bg-[#8B1a1a] hover:bg-[#6d1414] text-white font-semibold py-3 rounded-xl transition-all hover:shadow-lg"
+                >
+                  Забронировать
+                </button>
+                <a
+                  href="https://airbnb.com/h/crystalmilan"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1.5 px-4 py-3 rounded-xl border-2 border-[#FF5A5F] text-[#FF5A5F] hover:bg-[#FF5A5F] hover:text-white font-semibold text-sm transition-all"
+                >
+                  <Icon name="ExternalLink" size={15} />
+                  Airbnb
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -584,10 +595,15 @@ export default function Index() {
                     <span>🏠 Airbnb — Апартаменты №1</span>
                     <Icon name="ExternalLink" size={14} className="opacity-70" />
                   </a>
-                  <span className="flex items-center justify-between bg-white/10 px-4 py-2.5 rounded-xl text-sm font-medium text-white/50 cursor-default">
+                  <a
+                    href="https://airbnb.com/h/crystalmilan"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-between bg-white/15 hover:bg-white/25 px-4 py-2.5 rounded-xl text-sm font-medium transition-colors"
+                  >
                     <span>🏠 Airbnb — Апартаменты №2</span>
-                    <span className="text-xs opacity-50">скоро</span>
-                  </span>
+                    <Icon name="ExternalLink" size={14} className="opacity-70" />
+                  </a>
                 </div>
               </div>
             </div>
