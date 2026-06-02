@@ -527,6 +527,15 @@ export default function Index() {
                 <button className="w-full bg-[#8B1a1a] hover:bg-[#6d1414] text-white font-semibold py-3.5 rounded-xl transition-all hover:shadow-lg">
                   Отправить запрос
                 </button>
+                <a
+                  href="https://wa.me/393517110016"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1ebe5c] text-white font-semibold py-3.5 rounded-xl transition-all hover:shadow-lg"
+                >
+                  <Icon name="MessageCircle" size={18} />
+                  Написать в WhatsApp
+                </a>
               </div>
             </div>
             <div className="flex flex-col gap-5">
@@ -534,20 +543,20 @@ export default function Index() {
                 <p className="text-xs font-semibold text-[#8a7060] uppercase tracking-widest mb-4">Контакты</p>
                 <div className="flex flex-col gap-4">
                   {[
-                    { icon: "MessageCircle", label: "WhatsApp / Telegram", value: "+39 333 000 0000" },
-                    { icon: "Mail", label: "Email", value: "info@milanocasa.it" },
-                    { icon: "Instagram", label: "Instagram", value: "@milanocasa" },
-                    { icon: "MapPin", label: "Адрес", value: "Via Padova, Milano, Italy" },
-                  ].map(({ icon, label, value }) => (
-                    <div key={label} className="flex items-center gap-3">
-                      <div className="w-9 h-9 bg-amber-50 rounded-xl flex items-center justify-center flex-shrink-0">
+                    { icon: "MessageCircle", label: "WhatsApp", value: "+39 351 711 0016", href: "https://wa.me/393517110016" },
+                    { icon: "Mail", label: "Email", value: "info@milanocasa.it", href: "mailto:info@milanocasa.it" },
+                    { icon: "Instagram", label: "Instagram", value: "@milanocasa", href: "https://instagram.com/milanocasa" },
+                    { icon: "MapPin", label: "Адрес", value: "Via Padova, Milano, Italy", href: "https://maps.google.com/?q=Via+Padova+Milano" },
+                  ].map(({ icon, label, value, href }) => (
+                    <a key={label} href={href} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 group">
+                      <div className="w-9 h-9 bg-amber-50 group-hover:bg-amber-100 rounded-xl flex items-center justify-center flex-shrink-0 transition-colors">
                         <Icon name={icon} size={16} className="text-[#c9913a]" />
                       </div>
                       <div>
                         <p className="text-xs text-[#8a7060]">{label}</p>
-                        <p className="text-sm font-semibold text-[#2a1f1a]">{value}</p>
+                        <p className="text-sm font-semibold text-[#2a1f1a] group-hover:text-[#8B1a1a] transition-colors">{value}</p>
                       </div>
-                    </div>
+                    </a>
                   ))}
                 </div>
               </div>
